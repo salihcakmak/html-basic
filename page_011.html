@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        audio ve video
+    -->
+
+    <audio controls loop muted>
+        <source src="~/path/example.mp3" type="audio/mpeg">
+        Tarayıcın tarafından desteklenmiyor.
+    </audio>
+
+    <video controls loop muted poster="your.gif">
+        <source src="~/path/example.mp4" type="video/mp4">
+        <track src="subtitle-en.vtt" kind="subtitles" srclang="en">
+        <track src="subtitle-de.vtt" kind="subtitles" srclang="de">
+        Tarayıcın tarafından desteklenmiyor.
+    </video>
+</body>
+</html>

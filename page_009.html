@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        colspan sütun birleştirir.
+        rowspan satır birleştirir.
+        caption üst başlık.
+    -->
+    <table border="1">
+        <caption>Alışveriş Listesi</caption>
+        <thead>
+            <tr>
+                <th>
+                    
+                </th>
+                <th>
+                    Ürün Adı
+                </th>
+                <th>
+                    Tutar
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Meyve</td>
+                <td>Elma</td>
+                <td>5 TL</td>
+            </tr>
+            <tr>
+                <td>Armut</td>
+                <td>7 TL</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Sebze</td>
+                <td>Soğan</td>
+                <td>2 TL</td>
+            </tr>
+            <tr>
+                <td>Patates</td>
+                <td>4 TL</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Genel Toplam</td>
+                <td>18 TL</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
