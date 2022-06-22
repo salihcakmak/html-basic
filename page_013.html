@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!--
+		html forms
+		form özellikleri arasında method ,action en bilindikleridir.
+		action formun hangi sayfaya yönlendirileceğidir.
+		method formun verileri taşıma yöntemidir.(get post)
+		inputlar form içerisinde bulunan nesnelerdir.
+		label ifade nesneleridir.
+
+		attributes
+		for, type, name, id, placeholder, required, readonly, checked, disabled, maxlength, minlenght, max, min, accept, autocomplate, autofocus
+	-->
+	<form action="" method="GET" id="form1">
+		<input type="button" value="Button"><br>
+
+		<fieldset>
+			<legend>Giriş Yap</legend>
+			<label for="chk1">Sözleşmeyi Onayla</label>
+			<input required checked type="checkbox" name="chk1" id="chk1">
+
+			<label for="chk2">Formu Onayla</label>
+			<input required type="checkbox" name="chk2" id="chk2"><br><br>
+
+			<label for="selectColor">Renk Seç</label>
+			<input required type="color" name="selectColor" id="selectColor"><br><br>
+
+			<label for="selectDate">Tarih Seç</label>
+			<input type="date" name="selectDate" id="selectDate"><br><br>
+		</fieldset>
+		<fieldset>
+			<legend>Tarihleri Seç</legend>
+			<label for="selectDateTime">Tarih Yaz</label>
+			<input type="datetime" name="selectDateTime" id="selectDateTime"><br><br>
+	
+			<label for="selectDateTimeLocal">Tarih ve Saat Seç</label>
+			<input type="datetime-local" name="selectDateTimeLocal" id="selectDateTimeLocal"><br><br>
+	
+			<label for="mail">E-Mail</label>
+			<input type="email" name="mail" id="mail"><br><br>
+	
+			<label for="file">Dosya Seç</label>
+			<input type="file" name="file" accept="image/*" id="file"><br><br>
+	
+			<label for="hidd">Gizli input</label>
+			<input type="hidden" name="hidd"><br><br>
+	
+			<label for="selectMonth">Ay Seç</label>
+			<input type="month" name="selectMonth" id="selectMonth"><br><br>
+		</fieldset>
+
+		<label for="selectNumber">Sayı Seç</label>
+		<input type="number" value="2" min="2" max="5" name="selectNumber" id="selectNumber"><br><br>
+
+		<label for="passwd">Şifre</label>
+		<input type="password" name="passwd" id="passwd"><br><br>
+		
+		<input type="radio" name="gender" checked value="erkek" id="">Erkek
+		<input type="radio" name="gender" value="kadın" id="">Kadın<br><br>
+
+		<label for="range">Beceri Seviyesi</label>
+		<input type="range" value="0" step="10" name="range" id="range"><br><br>
+
+		<input type="reset" value="Sıfırla"><br><br>
+
+		<label for="search">Ara</label>
+		<input type="search" autofocus name="search" id="search"><br><br>
+
+		<input type="submit" value="Gönder"><br><br>
+
+		<label for="phone">Telefon</label>
+		<input type="tel" maxlength="11" minlength="10" name="phone" id="phone"><br><br>
+
+		<label for="name">Ad Soyad</label>
+		<input disabled type="text" readonly value="trust_me" name="name" id="name"><br><br>
+
+		<label for="time">Zaman Seç</label>
+		<input type="time" name="time" id="time"><br><br>
+
+		<label for="url">Github Adresin URL</label>
+		<input type="url" name="url" id="url"><br><br>
+
+		<label for="selectWeek">Hafta Seç</label>
+		<input type="week" name="selectWeek" id="selectWeek"><br><br>
+		<input type="text" name="" autocomplete="off" id=""><br>
+	</form>
+
+
+	<br><br>
+	<fieldset>
+		<legend>Eleman Seç</legend>
+		<input list="languages" form="form1">
+		<datalist id="languages">
+			<option value="HTML"></option>
+			<option value="CSS"></option>
+			<option value="Javascript"></option>
+		</datalist>
+		<br><br>
+
+		<select name="namelist" id="namelist">
+			<optgroup label="Front-end">
+				<option value="Salih">Salih</option>
+				<option value="Fatih">Fatih</option>
+				<option value="Samim">Samim</option>
+			</optgroup>
+			<optgroup label="Back-end">
+				<option value="Ali">Ali</option>
+				<option value="Ahmet">Ahmet</option>
+				<option value="Eren">Eren</option>
+			</optgroup>
+		</select>
+	</fieldset>
+	<br><br>
+	<textarea name="textarea1" id="textarea1" cols="30" rows="10"></textarea>
+</body>
+</html>
